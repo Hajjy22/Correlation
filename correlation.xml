@@ -1,0 +1,15 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='correlation'>
+  <useClause path='ieee.STD_LOGIC_SIGNED.all' />
+  <useClause path='ieee.std_logic_arith.all' />
+  <useClause path='ieee.std_logic_1164.all' />
+    <portList>
+
+      <port name='CLK' direction='in' type='STD_LOGIC' kind='' />
+      <port name='RSTn' direction='in' type='STD_LOGIC' kind='' />
+      <port name='In_re' direction='in' type='std_logic_vector (11 downto 0)' kind='array' library='work' package='correlation' packedDimension='(11 downto 0)' />
+      <port name='Evalue' direction='in' type='STD_LOGIC' kind='' />
+      <port name='Corr_symbole' direction='out' type='std_logic_vector (16 downto 0)' kind='array' library='work' package='correlation' packedDimension='(16 downto 0)' />
+      <port name='Corr_trame' direction='out' type='std_logic_vector (18 downto 0)' kind='array' library='work' package='correlation' packedDimension='(18 downto 0)' />
+
+    </portList>
+</interfaceDefinition>
